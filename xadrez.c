@@ -1,40 +1,42 @@
 #include <stdio.h>
 
-int main() {
+int main(){
 
-    printf("*** Desafio de Xadrez *** \n");
-    
-        int Torre = 5;   // Move-se 5 casas para a direita
-        int Bispo = 5;   // Move-se 5 casas na diagonal (cima, direita)
-        int Rainha = 8;  // Move-se 8 casas para a esquerda
-    
-        // Movimentação do Bispo
-        // Utiliza estrutura de repetição while
-        printf("Movimento do Bispo:\n");
-        int i = 1;
-        while (i <= Bispo) {
-            printf("Cima, direita\n");
-            i++;
-        }
-    
-        // Movimentação da Torre
-        // Utiliza estrutura de repetição for
-        printf("\nMovimento da Torre:\n");
-        for (int i = 1; i <= Torre; i++) {
-            printf("Direita\n");
-        }
-    
-        // Movimentação da Rainha
-        // Utiliza estrutura de repetição do-while
-        printf("\nMovimento da Rainha:\n");
-        int i = 1;
-        do {
-            printf("Esquerda\n");
-            i++;
-        } while (i <= Rainha);
-    
-        return 0;
-    }
+printf("*** Desafio do Xadres ***\n");
+
+int Torre = 5;  // Move-se 5 casas para a direita
+int Bispo = 5;  // Move-se 5 casas na diagonal (cima, direita)
+int Rainha = 8; // Move-se 8 casas para a esquerda
+
+//Movimentação da Torre 
+// Ultilizando a estrutura de repetição for
+printf("\nMovimento da Torre:\n");
+for (int i = 0; i < Torre; i++)
+{
+   printf("Direita\n");
+}
+// Movimentação do Bispo
+// Utiliza estrutura de repetição while
+printf("\nMovimentando o Bispo:\n");
+int i = 1;
+while (i <= Bispo)
+{
+printf ("Cima, Direita\n");
+    i++;
+}
+// Movimentação da Rainha
+// Utiliza estrutura de repetição do-while
+printf("\nMovimentando a Rainha:\n");
+
+ i = 1; // Estava dando erro tirei o int deu certo.*
+do
+{
+   printf("Esquerda\n");
+   i++;
+} while (i <= Rainha);
+
+    return 0;
+}
 
     // Nível Aventureiro - Movimentação do Cavalo
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
